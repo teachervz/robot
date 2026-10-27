@@ -123,9 +123,9 @@ body { margin: 0; background: #d9d7e6; color: #1b1740; font-family: var(--body);
     <label>رابط صفحة الروبوت<input id="url" type="url" placeholder="https://..."></label>
     <label>اسم المدرسة<input id="school" type="text" value=""></label>
     <label>المادة والصف<input id="subject" type="text" value="التقنية الرقمية • الصف الأول الثانوي"></label>
-    <label>عنوان الدرس<input id="lesson" type="text" value="التقنيات الناشئة"></label>
-    <label>العنوان الفرعي<input id="lessonSub" type="text" value="تقنيات تصنع المستقبل"></label>
-    <label>المعلمة<input id="teacher" type="text" value="منال العتيبي"></label>
+    <label>عنوان الدرس<input id="lesson" type="text" value="الذكاء الاصطناعي"></label>
+    <label>العنوان الفرعي<input id="lessonSub" type="text" value="حين تتعلّم الآلة"></label>
+    <label>المعلمة<input id="teacher" type="text" value="هدى الدهّاس"></label>
   </div>
   <button id="printBtn" type="button">اطبعي الورقة</button>
 </section>
@@ -175,7 +175,7 @@ function syncText() {
   const v = (id) => $(id).value.trim();
   $("pSchool").textContent = v("school"); $("pSchoolChip").hidden = !v("school");
   $("pSubject").textContent = v("subject"); $("pSubject").hidden = !v("subject");
-  drawTitle(v("lesson") || "التقنيات الناشئة");
+  drawTitle(v("lesson") || "الذكاء الاصطناعي");
   $("pSub").textContent = v("lessonSub"); $("pSub").hidden = !v("lessonSub");
   $("pTeacher").textContent = "أ. " + v("teacher").replace(/^أ\.\s*/, ""); $("pTeacherWrap").hidden = !v("teacher");
 }

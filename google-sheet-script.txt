@@ -11,9 +11,9 @@ function doPost(e) {
 
 function testRow() {
   addRow({
-    lesson: "تجربة", teacher: "منال العتيبي", role: "زائرة", name: "",
+    lesson: "تجربة", teacher: "هدى الدهّاس", role: "زائرة", name: "",
     scores: [{ name: "وضوح أهداف الدرس", value: 5 }, { name: "تفاعل الطالبات ومشاركتهن", value: 4 },
-             { name: "توظيف التقنيات الحديثة", value: 5 }, { name: "إدارة الوقت والصف", value: 4 }],
+             { name: "توظيف التقنية والذكاء الاصطناعي", value: 5 }, { name: "إدارة الوقت والصف", value: 4 }],
     average: 4.5, comment: "صف تجريبي، احذفيه"
   });
 }
